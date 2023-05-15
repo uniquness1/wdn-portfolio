@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #181818;
+}
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Cinzel', serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background: transparent;
+}
+
+.logo h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.logo h2 span {
+    color: green;
+}
+
+nav a {
+    padding: 0 1rem;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    width: 4rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.bars {
+    display: block;
+    background-color: #fff;
+    height: 0.4rem;
+    margin: 0.4rem;
+    transition: transform 0.5s ease;
+}
+
+.hamburger.open .bars:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bars:nth-child(1) {
+    transform: translateY(1.7rem) rotate(48deg);
+}
+
+.hamburger.open .bars:nth-child(3) {
+    transform: translateY(0.1rem) rotate(-48deg)
+}
+
+.btn {
+    background: green;
+    padding: 1.2rem 4rem;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: #023f02;
+}
+
+.hero {
+    background: url(/image/bg-img.jfif), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    color: white;
+    height: 87dvh;
+    height: 87vh;
+    display: grid;
+    place-items: center start;
+    padding: 0 3rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-content p {
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.hero-content h1 span {
+    color: green;
+}
+
+.hero-content .description {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 1.2rem .5rem;
+    width: 90%;
+    border-radius: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+/* input:focus{
+    border: 1px solid green;
+}
+input:hover{
+    border: 1px solid red;
+} */
+.btn--1 {
+    margin-left: -11.5rem;
+    padding: 1rem 2rem;
+}
+
+/* about section */
+.about{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+    margin: 5rem auto 0;
+}
+.about img{
+    width: 90%;
+    height: 400px;
+}
+.about-content{
+    color: white;
+    /* max-width: 60rem; */
+    width: 90%;
+    margin: 0 auto;
+    align-self: center;
+}
+.about h2{
+    font-size: 7rem;
+    margin-bottom: 3rem;
+}
+.about h4{
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+.about p{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.services,
+.call-to-action{
+    max-width: 120rem;
+    margin: 10rem auto 10rem;
+}
+.small-heading{
+    color: white;
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.text{
+    font-size: 2.2rem;
+}
+.services-descriptions{
+    color: #5dbd5d;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+.service-cards{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.services-item{
+    max-width: 32rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.fa-solid{
+    color: green;
+    font-size: 4rem;
+}
+.call-to-action{
+    text-align: center;
+}
+.footer{
+    background-color: #000;
+    margin-bottom: 0;
+}
+.footer-content{
+    text-align: center;
+    padding: 10rem 0 .5rem;
+}
+.fa-brands{
+    color: white;
+    background-color: green;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: .5rem;
+}
+.social{
+    margin-bottom: 3rem;
+}
+@media(max-width: 767px) {
+    html {
+        font-size: 50%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
